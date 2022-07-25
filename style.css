@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0px;
     font-family: sans-serif;
 }
@@ -18,7 +19,7 @@ html, body {
 }
 
 .header-elements {
-    border: 1px green solid;
+    border: 1px #1f2937 solid;
     flex: 2;
     align-self: stretch;
     color: white;
@@ -35,33 +36,52 @@ html, body {
 
 .h-logo {
     font-weight: 900;
+    font-size: 30px;
+    margin: 15px 0px;
 }
 
 .header-link-wrapper {
     display: flex;
     justify-content: flex-end;
-    gap: 15px;
-}
-
-.header-signup-title {
-    font-size: 50px;
-}
-.header-signup-subtext {
-
-}
-
-.header-image {
-    min-height: 360px;
-    display: flex;
-    justify-content: flex-end;
-
+    gap: 30px;
 }
 
 .signup-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-around;
 }
+
+.signup-section h1 {
+    font-size: 75px;
+    display: flex;
+    margin: 0px;
+}
+
+.signup-section p {
+    margin: 0px;
+    font-size: 30px;
+    color: gray;
+}
+
+.signup-section button {
+    margin: 0px;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    padding: 5px 30px;
+}
+
+.header-image {
+    min-height: 360px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 
 .break {
     flex-basis: 100%;
@@ -75,4 +95,5 @@ a {
 
 li {
     list-style-type: none;
+    font-size: 20px;
 }
