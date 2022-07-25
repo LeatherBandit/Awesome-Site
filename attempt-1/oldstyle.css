@@ -1,0 +1,154 @@
+
+/* Define general rules */
+body, html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+/* Global wrapper to sort out each section of the page (6 in total) */
+.global-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    height: 100%;
+}
+
+
+/*Defines header and footer basis and max height*/
+.header, .footer {
+    flex-grow: 0;
+    border: 1px solid red;
+    flex-basis: 5%;
+    max-height: 5%;
+}
+
+
+/*Defines the remaining elements starting heights but with no max */
+.banner, .quote, .panels, .call-to-action {
+    flex-basis: 20%;
+    max-height: 25%;
+    flex-grow: 4;
+    flex-shrink: 0;
+    border: 1px solid red;
+}
+
+/* Aligns and formats header content */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Aligns and formats links in header */
+.header-links {
+    display: flex;
+    gap: 20px;
+}
+
+.logo {
+    border: 1px solid blue;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+}
+
+.banner-inner {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    height: 80%;
+    width: 28%;
+    border: 1px green solid;
+}
+
+
+
+.quote {
+
+}
+
+.panels {
+
+}
+
+.call-to-action {
+
+}
+
+.footer {
+
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    color: gray;
+}
+
+/*
+
+.header, .footer {
+    flex-grow: 1;
+    border: 1px solid red;
+}
+
+.banner, .quote, .panels, .call-to-action {
+    flex-grow: 4;
+    flex-shrink: 0;
+    border: 1px solid red;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+    gap: 10px;
+    align-content: flex-end;
+}
+
+.logo {
+    border: 1px solid blue;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: gray;
+}
+
+.banner {
+    
+}
+
+.quote {
+
+}
+
+.panels {
+
+}
+
+.call-to-action {
+
+}
+
+.footer {
+
+}
+*/
